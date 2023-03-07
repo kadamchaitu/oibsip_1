@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --text: 1.5rem;
+  --head: calc(1rem + 5vw);
+  --bg-color: #efeff0;
+}
+.hero-section {
+  min-height: 100vh;
+  /* width: 108rem; */
+  background: linear-gradient(grey, transparent),
+    url(https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0rem 1rem;
+  color: aliceblue;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-left: 3rem;
+  font-size: var(--text);
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  border-bottom: 2px solid transparent;
+}
+.navbar ul li a:hover {
+  border-bottom: 2px solid white;
+}
+.hero-text {
+  color: rgb(213, 224, 234);
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text a {
+  text-decoration: none;
+  font-weight: 900;
+  background-color: var(--bg-color);
+  font-size: var(--text);
+  padding: 0.8rem 1rem;
+}
+.hero-text a:hover {
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  background-color: gray;
+}
+.hero-text h2 {
+  font-size: var(--head);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+.grid-text {
+  margin-top: 30px;
+  text-align: center;
+  font-size: var(--text);
+  color: rgb(71, 105, 137);
+}
+
+.grid {
+  height: 100vh;
+  display: cover;
+  padding: 80px 30px;
+  display: grid;
+  align-items: center;
+  width: 100rem;
+  grid-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+
+.grid-item {
+  background-color: #ecf2ff;
+  border-radius: 0.4rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.grid-item:hover {
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 3rem;
+}
+.card-header {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #c5c5da;
+  border-radius: 0.4rem;
+  text-align: center;
+}
+.card-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.h2 {
+  font-size: var(--head);
+}
+#footer {
+  text-align: center;
+  background-color: #c5c5da;
+}
+
+.fb:hover {
+  color: blue;
+}
+.msg:hover {
+  color: blue;
+}
+.twt:hover {
+  color: blue;
+}
+.isg:hover {
+  color: palevioletred;
+}
+.s-net {
+  padding: 2rem 2rem;
+  size: 50px;
+}
